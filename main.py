@@ -4,6 +4,7 @@ from src import solutions
 
 
 def main():
+    
 
     people_list = [
     {'name': 'alice',   'age': 20, 'weight': 160, 'sex': 'male',   'id': 1},
