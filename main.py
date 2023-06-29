@@ -1,6 +1,7 @@
 
 # Update with the exercise you are trying to test
 from src import solutions
+from word_counter import WordCounter
 
 
 def main():
@@ -16,6 +17,8 @@ def main():
         {'id': 3, 'name': 'charlie', 'weight_kg': 80, 'height_meters': 1.8},
     ]
 
+    sentence = "This is a test of the emergency broadcast system"
+
     # solutions.sort_people()
     """
     
@@ -30,7 +33,15 @@ def main():
     #new_people_list = solutions.calc_bmi(people_list2) 
     #print(new_people_list)
 
-    print(solutions.get_people(people_list))
+    # print(solutions.get_people(people_list))
+
+    word_counter = WordCounter(sentence)
+
+    print(word_counter.get_word_count())    # Returns the number of all the words.
+
+    print(word_counter.get_shortest_word()) # Returns the length of the shortest word.
+    print(word_counter.get_longest_word())  # Returns the length of the longest word.
+
     
 
 
