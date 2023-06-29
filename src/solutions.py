@@ -12,3 +12,7 @@ def filter_male(people_list):
 def calc_bmi(people_list2): 
     bmi_list = list(map(lambda person: {**person, 'bmi': round(person['weight_kg'] / person['height_meters'] ** 2, 1)}, people_list2)) 
     return bmi_list
+
+def get_people(people_list):
+    new_list = [p['name'] for p in people_list if p['age'] >= 15]
+    return new_list
