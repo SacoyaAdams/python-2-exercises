@@ -19,6 +19,7 @@ class Calculator:
     def div(self, num1, num2):
         self.result = num1 // num2
     
+    
     def get_result(self):
 
         return self.result
